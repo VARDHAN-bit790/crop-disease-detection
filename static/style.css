@@ -1,0 +1,69 @@
+.navbar {
+    background-color: #198754 !important;
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: white !important;
+}
+.nav-link {
+    color: white !important;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+.nav-link:hover {
+    color: #d4edda !important;
+}
+
+.bg_img {
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Full-screen height */
+    background: url('bg_image2.jpg') no-repeat center center/cover;
+}
+
+/* Overlay to make image lighter */
+.bg_img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4); /*White overlay for light effect*/
+}
+
+.bg_img_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #3D550C; 
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+.bg_img_content h1 {
+    font-size: 60px;
+}
+
+.btn-explore {
+    background-color: #198754;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.btn-explore:hover {
+    background-color: #145c36; /* Darker green on hover */
+}
