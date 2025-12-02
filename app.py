@@ -9,7 +9,8 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__)
 
 # Load your trained model
-MODEL_PATH = 'model/crop_disease_model_tf.keras'
+MODEL_PATH = "model/crop_disease_model.tf.keras"
+
 
 # Check if model exists
 if not os.path.exists(MODEL_PATH):
